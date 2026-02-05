@@ -273,6 +273,7 @@ if __name__ == "__main__":
     print(f"Original:      {results['original_size'] / 1024:.2f} KB")
     print(f"Compressed:   {results['compressed_size'] / 1024:.2f} KB")
     print(f"Compression level:    {results['compression_ratio']:.2f}:1")
+    print(f"Oszczędność miejsca:  {(1 - results['compressed_size']/results['original_size'])*100:.1f}%")
     print(f"{'─' * 60}")
     print(f"\nSAVED FILES:")
     print(f"{'─' * 60}\n")
